@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+i {
+    cursor: pointer;
+}
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.container {
+  width: 400px;
+}
+.container .header {
+  height: 200px;
+  background-size: cover;
+  background-image: url(images/img.jpg);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  border-radius: 20px 20px 0 0;
+}
+
+.clear {
+  align-self: flex-end;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.clear i {
+  color: aliceblue;
+  font-size: 25px;
+}
+
+.clear i:hover {
+  transform: rotate(45deg);
+}
+
+.date {
+  margin-top: auto;
+  margin-left: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 19px;
+}
+
+.date h2 {
+  color: #fff;
+}
+.content {
+    border: 2px solid #002150;
+    padding-bottom: 15px;
+    border-radius: 0 0 20px 20px
+}
+.list {
+  overflow: auto;
+  height: 300px;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 2px solid #c1c1c1;
+  font-size: 20px;
+}
+.item p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.item .fa-trash-alt {
+    transition: color 0.5s ease;
+}
+.item .fa-trash-alt:hover {
+    color: red;
+}
+
+.item p.completed {
+    text-decoration: line-through;
+    color: rgb(179, 179, 179);
+}
+.fa-check-circle {
+    color: green;
+}
+
+.add-item {
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  margin-top: 15px;
+}
+.add-item i {
+  font-size: 25px;
+  color: blue;
+}
+.add-item input {
+  padding: 10px 15px;
+  border: 2px solid blue;
+  flex: 1;
+  margin-left: 14px;
+  font-size: 20px;
+  outline: none;
+}
