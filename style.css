@@ -12,6 +12,10 @@ body {
   justify-content: center;
   height: 100vh;
   align-items: center;
+  flex-direction: column;
+}
+h1 {
+  color: #002150;
 }
 .container {
   width: 300px;
@@ -92,11 +96,11 @@ body {
 }
 .add-item i {
   font-size: 25px;
-  color: blue;
+  color: #002150;
 }
 .add-item input {
   padding: 10px 15px;
-  border: 2px solid blue;
+  border: 2px solid #002150;
   flex: 1;
   margin-left: 14px;
   font-size: 20px;
