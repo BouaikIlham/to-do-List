@@ -14,7 +14,7 @@ body {
   align-items: center;
 }
 .container {
-  width: 400px;
+  width: 300px;
 }
 .container .header {
   height: 200px;
@@ -101,4 +101,5 @@ body {
   margin-left: 14px;
   font-size: 20px;
   outline: none;
+  width: 100%;
 }

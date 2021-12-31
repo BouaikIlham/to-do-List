@@ -3,9 +3,12 @@ const addButton = document.querySelector('.fa-plus-circle')
 const clear = document.querySelector('.fa-sync-alt')
 const input = document.getElementById('input')
 const date = document.querySelector(".date")
-let today = new Date()
-let option = {weekday:'long',month:'short',day:'numeric'}
-date.innerHTML = today.toLocaleDateString(option)
+
+setInterval(() => {
+    let today = new Date()
+    date.innerHTML = today.toUTCString()
+}, 1000)
+
 
 addButton.addEventListener("click", (e) => {
     if(input.value) {
