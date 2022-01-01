@@ -20,7 +20,6 @@ function getRandomColor() {
 }
 
 setInterval(() => {
-  console.log("hjfehfezh");
   title.style.textShadow = `4px -3px 4px ${getRandomColor()}`;
 }, 500);
 
